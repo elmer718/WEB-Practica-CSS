@@ -1,0 +1,39 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.cuerpo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para secciones de desarrolladores */
+.desarrollador {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.desarrollador img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Estilos para títulos y roles */
+.desarrollador h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.desarrollador p {
+    color: #666;
+}

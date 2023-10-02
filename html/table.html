@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Formulario</title>
+    <link rel="stylesheet" type="text/css" href="../css/table.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="dashboard.html">Inicio</a></li>
+            <li><a href="table.html">Formulario</a></li>
+            <li><a href="developers.html">Desarroladores</a></li>
+            <li class="sesion"><a href="../login.html">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elmer</td>
+                        <td>Rodriguez</td>
+                        <td>elmer@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Ramires</td>
+                        <td>juan@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="agregar-btn">Agregar Registro</button>
+        </div>
+        <!-- Formulario de Registro (inicialmente oculto) -->
+        <div id="registro-form">
+            <button id="cerrar-btn">X</button>
+            <h2>Agregar Nuevo Registro</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+    <script>
+        // JavaScript para mostrar/ocultar el formulario de registro
+        const agregarBtn = document.getElementById('agregar-btn');
+        const registroForm = document.getElementById('registro-form');
+        const cerrarBtn = document.getElementById('cerrar-btn');
+
+        agregarBtn.addEventListener('click', () => {
+            registroForm.style.display = 'block';
+        });
+
+        cerrarBtn.addEventListener('click', () => {
+            registroForm.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
